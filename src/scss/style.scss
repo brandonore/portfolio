@@ -1,0 +1,56 @@
+@import 'argon.scss';
+
+.navbar-transparent {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    width: 100%;
+    background-color: transparent !important;
+    box-shadow: none;
+}
+
+.top-profile {
+    height: 580px;
+
+}
+
+.row-top {
+    background-image: url('../img/bg3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // position: absolute;
+    // left: 0;
+    // top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.profile-left {
+    justify-content: space-evenly;
+    > span {
+        font-size: 1rem;
+    }
+    > a i {
+        font-size: 1.8rem;
+    }
+    > a {
+        color: $danger !important;
+    }
+}
+
+.badge {
+    line-height: 1.5 !important;
+}
+
+.profile-img img {
+    position: absolute;
+    left: 50%;
+    max-width: 180px;
+    transform: translate(-50%, -30%);
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
