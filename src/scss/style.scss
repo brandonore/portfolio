@@ -2,7 +2,46 @@
 @import '_navbar.scss';
 @import '_mainprofile.scss';
 
+.n-card {
+    border: 2px solid $gray-300;
+}
 
-body {
-    overflow-x: hidden;
+.card-body {
+    padding: 1rem 0 0 1rem;
+}
+
+.card-overlay {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: $secondary;
+    border: none;
+    height: 0;
+    width: 100%;
+    transition: all .2s linear;
+    overflow: hidden;
+    padding: 0;
+    margin: 0 !important;
+    > .card-header {
+        text-align: center;
+        > a i {
+            transition: all .2s linear;
+            font-size: 3rem;
+            padding: 0 .5rem;
+        }
+    }
+    > .card-body {
+        text-align: center;
+        padding: 1rem;
+        > .card-text {
+            text-align: left;
+            font-size: 1rem;
+        }
+    }
+}
+
+.card:hover .card-overlay {
+    height: 100%;
+    cursor: pointer;
 }

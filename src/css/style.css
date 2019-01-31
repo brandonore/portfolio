@@ -11025,5 +11025,38 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     opacity: 0;
     top: 55px; } }
 
-body {
-  overflow-x: hidden; }
+.n-card {
+  border: 2px solid #dee2e6; }
+
+.card-body {
+  padding: 1rem 0 0 1rem; }
+
+.card-overlay {
+  font-size: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #f4f5f7;
+  border: none;
+  height: 0;
+  width: 100%;
+  transition: all .2s linear;
+  overflow: hidden;
+  padding: 0;
+  margin: 0 !important; }
+  .card-overlay > .card-header {
+    text-align: center; }
+    .card-overlay > .card-header > a i {
+      transition: all .2s linear;
+      font-size: 3rem;
+      padding: 0 .5rem; }
+  .card-overlay > .card-body {
+    text-align: center;
+    padding: 1rem; }
+    .card-overlay > .card-body > .card-text {
+      text-align: left;
+      font-size: 1rem; }
+
+.card:hover .card-overlay {
+  height: 100%;
+  cursor: pointer; }
