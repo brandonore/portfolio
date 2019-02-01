@@ -10981,8 +10981,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .profile-left {
   justify-content: space-evenly;
   font-size: 1.8rem; }
-  .profile-left > a {
-    color: #5e72e4 !important; }
 
 .badge {
   line-height: 1.5 !important; }
@@ -11047,7 +11045,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   .card-overlay > .card-header {
     text-align: center; }
     .card-overlay > .card-header > a i {
-      transition: all .2s linear;
       font-size: 3rem;
       padding: 0 .5rem; }
   .card-overlay > .card-body {
@@ -11060,3 +11057,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .card:hover .card-overlay {
   height: 100%;
   cursor: pointer; }
+
+a {
+  transition: all .2s linear; }
