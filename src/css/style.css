@@ -11049,7 +11049,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
       padding: 0 .5rem; }
   .card-overlay > .card-body {
     text-align: center;
-    padding: 1rem; }
+    padding: 1rem;
+    overflow-y: auto; }
     .card-overlay > .card-body > .card-text {
       text-align: left;
       font-size: 1rem; }
@@ -11057,6 +11058,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .card:hover .card-overlay {
   height: 100%;
   cursor: pointer; }
+
+html {
+  scroll-behavior: smooth; }
 
 a {
   transition: all .2s linear; }

@@ -29,6 +29,7 @@
     > .card-body {
         text-align: center;
         padding: 1rem;
+        overflow-y: auto;
         > .card-text {
             text-align: left;
             font-size: 1rem;
