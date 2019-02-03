@@ -11029,6 +11029,12 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .card-body {
   padding: 1rem 0 0 1rem; }
 
+.card-img-top {
+  height: 26vw; }
+
+.aurora {
+  object-fit: contain; }
+
 .card-overlay {
   font-size: 2rem;
   position: absolute;
@@ -11044,9 +11050,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   margin: 0 !important; }
   .card-overlay > .card-header {
     text-align: center; }
-    .card-overlay > .card-header > a i {
+    .card-overlay > .card-header > a, .card-overlay > .card-header i {
       font-size: 3rem;
       padding: 0 .5rem; }
+    .card-overlay > .card-header > i {
+      color: #5e72e4; }
+    .card-overlay > .card-header > i:hover {
+      color: #233dd2; }
   .card-overlay > .card-body {
     text-align: center;
     padding: 1rem;
@@ -11059,8 +11069,8 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
   height: 100%;
   cursor: pointer; }
 
-html {
-  scroll-behavior: smooth; }
+.compensate-for-scrollbar {
+  overflow: hidden; }
 
-a {
+a, i {
   transition: all .2s linear; }

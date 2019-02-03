@@ -3,10 +3,6 @@
 @import '_mainprofile.scss';
 @import '_profilecards.scss';
 
-html {
-    scroll-behavior: smooth;
-}
-
-a {
+a, i {
     transition: all .2s linear;
 }
