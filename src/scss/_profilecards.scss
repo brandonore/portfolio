@@ -10,6 +10,10 @@
     height: 26vw;
 }
 
+.card-cover {
+    object-fit: cover;
+}
+
 .card-overlay {
     font-size: 2rem;
     position: absolute;

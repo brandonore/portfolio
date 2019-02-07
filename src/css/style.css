@@ -11032,6 +11032,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .card-img-top {
   height: 26vw; }
 
+.card-cover {
+  object-fit: cover; }
+
 .card-overlay {
   font-size: 2rem;
   position: absolute;
