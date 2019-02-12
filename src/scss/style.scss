@@ -6,3 +6,12 @@
 a, i {
     transition: all .2s linear;
 }
+
+.contact  {
+    > input {
+        margin: 10px 0;
+    }
+    > textarea {
+        resize: none;
+    }
+}
