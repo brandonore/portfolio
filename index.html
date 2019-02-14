@@ -110,16 +110,24 @@
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-md-12 contact">
-                        <input class="form-control" type="text" name="name" placeholder="Name">
-                        <input class="form-control" type="text" name="email" placeholder="E-mail">
-                        <input class="form-control" type="text" name="subject" placeholder="Subject">
-                        <textarea class="form-control" name="message" placeholder="Write your message..." cols="30" rows="10"></textarea>
-                    </div>
+                    <form autocomplete="off" id="form" action="src/vendor/mail/mail.php" class="contact-form" method="POST" novalidate>
+                        <div class="col-md-12 contact">
+                            <div id="errors"></div>
+                            <input class="form-control" type="text" name="name" placeholder="Name" required>
+                            <input class="form-control" type="text" name="email" placeholder="E-mail" required>
+                            <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                            <input name="file" type="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                            <label id="label" for="file">Attach File...</label>
+                            <textarea class="form-control" name="message" placeholder="Write your message..." cols="30" rows="10" required></textarea>
+                            <div class="g-recaptcha" data-sitekey="6LcoWJEUAAAAADzRC5fkVDEmjQ_koLbqvY3n6vdl"></div>
+                            <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                            <div id="boxalign"><div class="xyz abc col s6"></div></div>	
+                        </div>
+                    </form>
                 </div>
             </div>
             <div class="modal-footer">
-              <button type="submit" name="submit" class="btn btn-danger">Send</button>
+              <button type="submit" class="btn btn-danger">Send</button>
             </div>
           </div>
         </div>
@@ -162,7 +170,7 @@
                         <div class="card border-light card-overlay">
                                 <div class="card-header">
                                     <a id="i2" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
+                                    <a href="https://github.com/brandonore/aurora"><i class="fab fa-github-alt"></i></a>
                                 </div>
                                 <div class="card-body">
                                     <div class="card-title">Aurora</div>
@@ -180,7 +188,7 @@
                                     </p>
                                 </div>
                             </div>
-                      <img class="card-img-top card-cover" src="/src/img/previews/aurora1.png" alt="Card image cap">
+                      <img class="card-img-top card-cover" src="/src/img/previews/aurora1.PNG" alt="Card image cap">
                       <div class="card-body">
                         <h5 class="card-title">Aurora</h5>
                         <p class="card-text">A simple, minimal desktop cryptocurrency tracker built with Electron.</p>
@@ -315,9 +323,12 @@
     <script src="src/vendor/popper/popper.min.js"></script>
     <script src="src/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Theme JS -->
+    <!-- Theme/Vendor JS -->
     <script src="src/js/argon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+    <script src="src/vendor/jsvalidation/jquery.form.js"></script>
+    <script src="src/vendor/jsvalidation/jquery.js"></script>
+    <script src="src/vendor/jsvalidation/jquery.validate.js"></script>
 
     <!-- Main JS -->
     <script src="src/js/main.js"></script>
