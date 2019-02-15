@@ -21,80 +21,29 @@ a, i {
 }
 
 #errors {
-    background-color: white;
+    background-color: transparent;
     border-radius: 2px;
-    color: #f44336;		/*color for text within error box*/
-    padding: 5px 10px;
-    margin-bottom: 30px;
-    -webkit-animation: summary 0.5s ease-out; 	/*animation for safari and chrome*/
-    -ms-animation: summary 0.5s ease-out;		/*animation for microsoft*/
-    -moz-animation: summary 0.5s ease-out;		/*animation for mozilla firefox*/
-    -o-animation: summary 0.5s ease-out;		/*animatiton for opera*/
-    animation: summary 0.5s ease-out;
+    padding: 10px 10px;
+    margin: 0;
+    animation: summary 0.5s linear;
     text-align:left;
     list-style-type: none;
     display:none;
+    transition: all .2s linear;
   }
 
-  @-webkit-keyframes 	/*webkit for safari and chrome*/
-summary {  0% {
-  transform: scale(0.9);
-  opacity: 0.6;
-}
- 100% {
-  transform: scale(1);
-  opacity: 1;
-}
-}
-
-@-ms-keyframes 		/*ms for microsoft*/
-summary {  0% {
-  transform: scale(0.9);
-  opacity: 0.6;
-}
- 100% {
-  transform: scale(1);
-  opacity: 1;
-}
-}
-
-@-moz-keyframes 	/*moz for mozilla firefox*/
-summary {  0% {
-  transform: scale(0.9);
-  opacity: 0.6;
-}
- 100% {
-  transform: scale(1);
-  opacity: 1;
-}
-}
-
-@-o-keyframes 	/*o for opera*/
-summary {  0% {
-  transform: scale(0.9);
-  opacity: 0.6;
-}
- 100% {
-  transform: scale(1);
-  opacity: 1;
-}
-}
-
-@keyframes 
-summary {  0% {
-  transform: scale(0.9);	/*scaling the error box to 0.9*/
-  opacity: 0.6;
-}
- 100% {
-  transform: scale(1);
-  opacity: 1;
-}
+@keyframes summary {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #errors ul { margin: 0; }
 
 #errors li {
-  color: #666;
   font-size: 0.95em;
   padding: 0.2em 0;
   margin: 0;
@@ -111,24 +60,26 @@ summary {  0% {
   outline: none !important;
 }
 
-.abc{		/*styling the succes message block after form submit*/
-    background: #5cd95c;
+// success box
+.abc {
+    background: $success;
     margin-top:20px;
     height:50px;
-    max-width:300px;		/*max width of succes message box*/
+    max-width:300px;
     display:none;
     padding:13px;
     border: 1px solid transparent;
     border-radius: 2px; 
     text-align:center !important;
     font-family:sans-serif;
-  }
+}
 
-.g-recaptcha{		/*google recaptcha box centering*/
+.g-recaptcha {
     text-align: -webkit-center;
     text-align: -moz-center;
     text-align: -ms-center;
     text-align: -o-center;
+    margin: 15px auto;
 }
 
 .inputfile {
@@ -152,32 +103,20 @@ summary {  0% {
     padding: 0.625rem 1rem;
 }
 
-.no-js .inputfile + label {
-    display: none;
-}
-
-.inputfile:focus + label,
-.inputfile.has-focus + label {
-    outline: 1px dotted #000;
-    outline: -webkit-focus-ring-color auto 5px;
-}
-
-.inputfile + label * {
-    /* pointer-events: none; */
-    /* in case of FastClick lib use */
-}
-
-.inputfile + label svg {
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
-    fill: currentColor;
-    margin-top: -0.25em;
-    margin-right: 0.25em;
-}
-
 #label {
     background-color: $danger;
     color: $secondary;
     border-radius: 4px;
+}
+
+.modal-footer {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+.modal-body {
+    padding-top: 0;
+}
+
+.name-field {
+    margin-top: 0;
 }
