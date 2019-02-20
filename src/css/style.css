@@ -11119,14 +11119,22 @@ a, i {
 #errors:focus {
   outline: none !important; }
 
+#boxalign {
+  display: flex;
+  justify-content: center; }
+
 .abc {
-  background: #2dce89;
+  background: #f4f5f7;
+  border-left: 4px solid #2dce89;
+  color: #2dce89;
   margin-top: 20px;
   height: 50px;
   max-width: 300px;
   display: none;
   padding: 13px;
-  border: 1px solid transparent;
+  margin: 0 auto;
+  margin-bottom: 15px;
+  font-weight: 700;
   border-radius: 2px;
   text-align: center !important;
   font-family: sans-serif; }

@@ -61,14 +61,23 @@ a, i {
 }
 
 // success box
+#boxalign {
+    display: flex;
+    justify-content: center;
+}
+
 .abc {
-    background: $success;
+    background: $secondary;
+    border-left: 4px solid $success;
+    color: $success;
     margin-top:20px;
     height:50px;
     max-width:300px;
     display:none;
     padding:13px;
-    border: 1px solid transparent;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-weight: 700;
     border-radius: 2px; 
     text-align:center !important;
     font-family:sans-serif;

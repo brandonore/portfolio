@@ -84,7 +84,7 @@
                             <div class="col-lg-9 about">
                                 <p>Hello! My name is Brandon Ore & I'm a web developer concentrating on front-end development with
                                     a little back-end as well. I'm focused on building clean, user-friendly experiences. Currently available 
-                                    for hire! Interested in working with me? Send me a message below.
+                                    for hire! Interested in working with me? Send me a message!
                                 </p>
                                 <p>Scroll down to see my work!</p>
                                 <div class="middle">
@@ -116,7 +116,7 @@
                             <input class="form-control name-field" type="text" name="name" placeholder="Name" required>
                             <input class="form-control" type="text" name="email" placeholder="E-mail" required>
                             <input class="form-control" type="text" name="subject" placeholder="Subject" required>
-                            <input name="file" type="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                            <input name="userfile[]" type="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
                             <label id="label" for="file">Attach File...</label>
                             <textarea class="form-control" name="message" placeholder="Write your message..." cols="30" rows="10" required></textarea>
                             <div class="g-recaptcha" data-sitekey="6Ld0nZEUAAAAACjpa2T0mDZdMjg2GmxpcPyMVZve"></div>
@@ -124,7 +124,7 @@
                             <div id="boxalign"><div class="xyz abc col s6"></div></div>	
                         </div>
                         <div class="modal-footer">
-                            <button type="submit" class="btn btn-danger">Send</button>
+                            <button type="submit" class="btn btn-danger btn-submit">Send</button>
                         </div>
                     </form>
                 </div>
@@ -332,5 +332,6 @@
 
     <!-- Main JS -->
     <script src="src/js/main.js"></script>
+    <script src="src/vendor/mail/mail.js"></script>
 </body>
 </html>
