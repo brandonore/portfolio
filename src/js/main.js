@@ -1,4 +1,46 @@
 jQuery(document).ready(function($) {
+    window.onload = function() {
+        let ctx = $("#myChart");
+        let myChart = new Chart(ctx, {
+        type: 'horizontalBar',
+        data: {
+            labels: ["HTML5", "CSS3", "Javascript", "Green"],
+            datasets: [{
+                label: '# of Votes',
+                data: [0, 100, 80, 40, 50, 25],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)'
+                ],
+                borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)'
+                ],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            responsive: false,
+            scales: {
+                xAxes: [{
+                    ticks: {
+                        fontSize: 20
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        fontSize: 20,
+                        beginAtZero:true
+                        }
+                    }]
+                }
+            }
+        });
+    } 
 
     //smooth scrolling for browsers that dont support css property
     $("a").click(function(event) {

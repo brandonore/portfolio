@@ -21,10 +21,10 @@
     <header class="header-global">
         <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
             <a class="navbar-brand mr-lg-5" href="#">Brandon Ore</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbar-default">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home</a>
@@ -163,7 +163,6 @@
                       <div class="card-body">
                         <h5 class="card-title">Samuraii</h5>
                         <p class="card-text">Simple invoice generator for Windows! Built with Electron.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
                     </div>
                     <div class="card n-card">
@@ -192,7 +191,6 @@
                       <div class="card-body">
                         <h5 class="card-title">Aurora</h5>
                         <p class="card-text">A simple, minimal desktop cryptocurrency tracker built with Electron.</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
                     </div>
                     <div class="card n-card">
@@ -220,7 +218,6 @@
                       <div class="card-body">
                         <h5 class="card-title">Chii</h5>
                         <p class="card-text">A multi-purpose Discord bot featuring moderation, animu, gaming, gambling, fun and more!</p>
-                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                       </div>
                     </div>
                   </div>
@@ -228,7 +225,7 @@
         </div>
     </div>
 
-    <div class="container-fluid mt-5">
+    <div class="container-fluid mt-5" id="work2">
             <div class="row mb-5">
                 <div class="col-lg-12 px-5">
                     <div class="card-deck">
@@ -258,7 +255,6 @@
                           <div class="card-body">
                             <h5 class="card-title">Expensify</h5>
                             <p class="card-text">Simple expense manager built with React.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
                         <div class="card n-card">
@@ -284,7 +280,6 @@
                           <div class="card-body">
                             <h5 class="card-title">Twitter Interface</h5>
                             <p class="card-text">A custom web interface for your twitter feed.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
                         <div class="card n-card">
@@ -310,13 +305,20 @@
                           <div class="card-body">
                             <h5 class="card-title">Content Scraper</h5>
                             <p class="card-text">A content scraper used to get t-shirt prices from the web.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                           </div>
                         </div>
                       </div>
                 </div>
             </div>
         </div>
+
+    <div class="container-fluid" id="skills">
+        <div class="row mb-5">
+            <div class="col-lg-12 px-5">
+                <canvas id="myChart" height="600"></canvas>
+            </div>
+        </div>
+    </div>
 
     <!-- Core -->
     <script src="src/vendor/jquery/jquery.min.js"></script>
@@ -329,6 +331,7 @@
 
     <!-- Theme/Vendor JS -->
     <script src="src/js/argon.min.js"></script>
+    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
 
     <!-- Main JS -->
     <script src="src/js/main.js"></script>

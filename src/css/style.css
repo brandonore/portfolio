@@ -11026,9 +11026,6 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .n-card {
   border: 2px solid #dee2e6; }
 
-.card-body {
-  padding: 1rem 0 0 1rem; }
-
 .card-img-top {
   height: 26vw; }
 
@@ -11080,6 +11077,13 @@ a, i {
 
 .contact > textarea {
   resize: none; }
+
+#work2 {
+  margin-bottom: 50px; }
+
+#myChart {
+  width: 100%;
+  padding: 2rem; }
 
 #form {
   width: 100%; }

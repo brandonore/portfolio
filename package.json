@@ -8,6 +8,7 @@
     "start": "gulp"
   },
   "dependencies": {
+    "chart.js": "^2.7.3",
     "gulp-cli": "^1.4.0"
   },
   "devDependencies": {
