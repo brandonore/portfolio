@@ -1,4 +1,3 @@
-/node_modules
-/src/vendor
-/src/scss/bootstrap
-/src/scss/custom
+node_modules
+src/assets
+src/scss/bootstrap

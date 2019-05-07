@@ -1,340 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>brandonore.io</title>
-    <!-- Favicon -->
-    <link href="/src/img/favicon.png" rel="icon" type="image/png">
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
-    <!-- Theme CSS -->
-    <link type="text/css" href="/src/css/argon.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-    <!-- Main css -->
-    <link rel="stylesheet" href="/src/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Brandon Ore</title>
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-LRlmVvLKVApDVGuspQFnRQJjkv0P7/YFrw84YYQtmYG4nK8c+M+NlmYDCv0rKWpG" crossorigin="anonymous">
+  <!-- Theme CSS -->
+  <link type="text/css" href="src/assets/css/argon.min.css" rel="stylesheet">
+  <!-- Custom css -->
+  <link href="src/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <header class="header-global">
-        <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light">
-            <a class="navbar-brand mr-lg-5" href="#">Brandon Ore</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbar-default">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="work2" href="#work">Work</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Resume</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    
-    <section class="top-profile">
-        <div class="row-top"></div>
-    </section>
+  <div class="d-flex" id="wrapper">
 
-    <section class="section">
-        <div class="container">
-            <div class="card card-profile shadow mt--300">
-                <div class="px-4">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-3 order-lg-2">
-                            <div class="profile-img">
-                                <a href="#">
-                                    <img class="rounded-circle" src="./src/img/profile-pic.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 order-lg-3 text-lg-right align-self-lg-center">
-                            <div class="py-4 mt-lg-0">
-                                <button type="button" class="btn btn-md btn-danger mr-4" data-toggle="modal" data-target="#contactModal">Contact Me</button>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 order-lg-1">
-                            <div class="profile-left py-4 d-flex">
-                                <span class="badge badge-primary">Social</span>
-                                    <a href="https://github.com/brandonore"><i class="fab fa-github-alt"></i></a>
-                                    <a href="https://instagram.com/y2ktheory/"><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-5">
-                        <h3>
-                            Brandon Ore
-                            <span class="font-weight-light">, 30</span>
-                        </h3>
-                        <div class="h6 font-weight-300">Denver, CO</div>
-                    </div>
-                    <div class="mt-5 py-5 border-top text-center">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-9 about">
-                                <p>Hello! My name is Brandon Ore & I'm a web developer concentrating on front-end development with
-                                    a little back-end as well. I'm focused on building clean, user-friendly experiences. Currently available 
-                                    for hire! Interested in working with me? Send me a message!
-                                </p>
-                                <p>Scroll down to see my work!</p>
-                                <div class="middle">
-                                    <div class="mouse"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- sidebar -->
+    <div class="border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">
+        <div class="logo">
+          <div class="profile-img"><img src="src/img/profile-pic.png" /></div>
+          <div><span>Brandon Ore</span><br>Web Developer</div>
         </div>
-    </section>
-
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="contactModalLabel">Drop me a line!</h5>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <form autocomplete="off" id="form" action="src/vendor/mail/mail.php" class="contact-form" method="POST" novalidate>
-                        <div class="col-md-12 contact">
-                            <div id="errors"></div>
-                            <input class="form-control name-field" type="text" name="name" placeholder="Name" required>
-                            <input class="form-control" type="text" name="email" placeholder="E-mail" required>
-                            <input class="form-control" type="text" name="subject" placeholder="Subject" required>
-                            <input name="userfile[]" type="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
-                            <label id="label" for="file">Attach File...</label>
-                            <textarea class="form-control" name="message" placeholder="Write your message..." cols="30" rows="10" required></textarea>
-                            <div class="g-recaptcha" data-sitekey="6Ld0nZEUAAAAACjpa2T0mDZdMjg2GmxpcPyMVZve"></div>
-                            <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
-                            <div id="boxalign"><div class="xyz abc col s6"></div></div>	
-                        </div>
-                        <div class="modal-footer">
-                            <button type="submit" class="btn btn-danger btn-submit">Send</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-          </div>
+        <div class="social">
+            <a href="https://github.com/brandonore"><i class="fab fa-github-alt"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
         </div>
+      </div>
+      <div class="list-group list-group-flush">
+        <a href="#" class="list-group-item">Home</a>
+        <a href="#" class="list-group-item">Portfolio</a>
+        <a href="#" class="list-group-item">Skills</a>
+        <a href="#" class="list-group-item">Contact</a>
+      </div>
     </div>
-    
-    <div class="container-fluid mt-5" id="work">
-        <div class="row mb-5">
-            <div class="col-lg-12 px-5">
-                <div class="card-deck">
-                    <div class="card n-card">
-                        <div class="card border-light card-overlay">
-                            <div class="card-header">
-                                <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                            </div>
-                            <div class="card-body">
-                                <div class="card-title">Samuraii</div>
-                                <ul class="card-text">
-                                    <li>Genearte PDF invoices</li>
-                                    <li>Preview the invoice in a separate window before saving</li>
-                                    <li>Upload images (eg. company logo)</li>
-                                    <li>Complete with date picker to select due dates</li>
-                                    <li>Easily add/remove discounts</li>
-                                    <li>Extra fields for Notes & Terms/Conditions</li>
-                                    <li>All fields are editable to allow for full customization</li>
-                                </ul>
-                                <p class="card-text">Built with Javascript, HTML5, CSS3 & wrapped in the Electron framework.
-                                    Please see the github page for downloads! *Currently only available for Windows. 
-                                </p>
-                            </div>
-                        </div>
-                      <img class="card-img-top card-cover" src="/src/img/previews/sam-prev.PNG" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Samuraii</h5>
-                        <p class="card-text">Simple invoice generator for Windows! Built with Electron.</p>
-                      </div>
-                    </div>
-                    <div class="card n-card">
-                        <div class="card border-light card-overlay">
-                                <div class="card-header">
-                                    <a id="i2" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/aurora"><i class="fab fa-github-alt"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">Aurora</div>
-                                    <ul class="card-text">
-                                        <li>Auto-syncs every 90 seconds</li>
-                                        <li>Pulls data from CoinMarketCap</li>
-                                        <li>Search to find your favorite coins</li>
-                                        <li>Settings include Satoshi -> USD & USD -> BTC converter that updates in real time</li>
-                                        <li>Toggle display between USD/BTC price & volume + market cap/available + total supply</li>
-                                        <li>Dark & light theme</li>
-                                        <li>Support for Windows & macOS</li>
-                                    </ul>
-                                    <p class="card-text">Built with Javascript, HTML5, CSS3 & wrapped in the Electron framework.
-                                        Please see the github page for downloads! 
-                                    </p>
-                                </div>
-                            </div>
-                      <img class="card-img-top card-cover" src="/src/img/previews/aurora1.PNG" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Aurora</h5>
-                        <p class="card-text">A simple, minimal desktop cryptocurrency tracker built with Electron.</p>
-                      </div>
-                    </div>
-                    <div class="card n-card">
-                        <div class="card border-light card-overlay">
-                                <div class="card-header">
-                                    <a id="i3" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/chii"><i class="fab fa-github-alt"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">Chii</div>
-                                    <ul class="card-text">
-                                        <li>Current command categories: admin, fun, general & anime</li>
-                                        <li>Admin - !addrole, !ban, !kick, !purge, !removerole, !tempmute, !warn</li>
-                                        <li>Fun - !8ball, !cat, !dog, !ping</li>
-                                        <li>General - !botinfo, !report, !say, !serverinfo, !warnlevel</li>
-                                        <li>Anime - !getanime</li>
-                                        <li>Detailed readme site coming soon with a full list of commands, detailed descriptions & usage info!</li>
-                                    </ul>
-                                    <p class="card-text">Built with Javascript & the discord.js module. <span class="badge badge-danger">HOLD</span> 
-                                        Project is currently on hold due to time constraints, but will be updated/re-written in the future.
-                                    </p>
-                                </div>
-                            </div>
-                      <img class="card-img-top card-cover" src="/src/img/previews/chii.png" alt="Card image cap">
-                      <div class="card-body">
-                        <h5 class="card-title">Chii</h5>
-                        <p class="card-text">A multi-purpose Discord bot featuring moderation, animu, gaming, gambling, fun and more!</p>
-                      </div>
+    <!-- end sidebar -->
+
+    <!-- page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle"><i class="far fa-bars"></i></button>
+      </nav>
+
+      <div class="container-fluid main-container">
+        <section class="pt-4">
+
+          <div class="container-fluid home-container">
+            <div class="row">
+
+              <div class="col-lg-6">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Brandon Ore <span class="font-weight-light">, 30</span></h5>
+                    <div class="h6 font-weight-300">Denver, CO</div>
+                    <p class="card-text">Hello! My name is Brandon Ore & I'm a web developer concentrating on front-end development with
+                      a little back-end as well. I'm focused on building clean, user-friendly experiences. Currently available 
+                      for hire! Interested in working with me? Send me a message!
+                    </p>
+                    <p class="card-text">Scroll down to see my work!</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-6">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Brandon Ore <span class="font-weight-light">, 30</span></h5>
+                      <div class="h6 font-weight-300">Denver, CO</div>
+                      <p class="card-text">Hello! My name is Brandon Ore & I'm a web developer concentrating on front-end development with
+                        a little back-end as well. I'm focused on building clean, user-friendly experiences. Currently available 
+                        for hire! Interested in working with me? Send me a message!
+                      </p>
+                      <p class="card-text">Scroll down to see my work!</p>
+                      <a href="#" class="btn btn-primary">Go somewhere</a>
                     </div>
                   </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid mt-5" id="work2">
-            <div class="row mb-5">
-                <div class="col-lg-12 px-5">
-                    <div class="card-deck">
-                        <div class="card n-card">
-                            <div class="card border-light card-overlay">
-                                <div class="card-header">
-                                    <a id="i4" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/expensify"><i class="fab fa-github-alt"></i></a>
-                                    <a href="http://expensify.brandonore.io"><i class="far fa-link"></i></a>
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">Expensify</div>
-                                    <ul class="card-text">
-                                        <li>Login with Google authentication</li>
-                                        <li>Expenses are saved via Google Firebase</li>
-                                        <li>Add/edit/remove expenses</li>
-                                        <li>Date pickers for easy filtering</li>
-                                        <li>Sort by date or amount</li>
-                                        <li>Search field for searching and filtering expenses</li>
-                                    </ul>
-                                    <p class="card-text">Built with React, Redux, Firebase, Javascript, HTML5 & CSS3. Click the 'link' icon
-                                        above for a live preview. 
-                                    </p>
-                                </div>
-                            </div>
-                          <img class="card-img-top" src="/src/img/previews/expensify.PNG" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Expensify</h5>
-                            <p class="card-text">Simple expense manager built with React.</p>
-                          </div>
-                        </div>
-                        <div class="card n-card">
-                            <div class="card border-light card-overlay">
-                                    <div class="card-header">
-                                        <a id="i5" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                        <a href="https://github.com/brandonore/Twitter-Interface"><i class="fab fa-github-alt"></i></a>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">Twitter Interface</div>
-                                        <ul class="card-text">
-                                            <li>Simple, clean, easy to read interface</li>
-                                            <li>Displays recent tweets from your timeline, recent accounts followed & direct messages</li>
-                                            <li>Post a tweet from the custom text box</li>
-                                            <li>Uses the twitter api and key to connect to your account.</li>
-                                        </ul>
-                                        <p class="card-text">Built with Javascript, HTML5, CSS3 & Pug.js.
-                                            *Requires a separate config.js file in the path of '/public/js/config.js'. 
-                                        </p>
-                                    </div>
-                                </div>
-                          <img class="card-img-top card-cover" src="/src/img/previews/twitter2.png" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Twitter Interface</h5>
-                            <p class="card-text">A custom web interface for your twitter feed.</p>
-                          </div>
-                        </div>
-                        <div class="card n-card">
-                            <div class="card border-light card-overlay">
-                                    <div class="card-header">
-                                        <a id="i6" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                        <a href="https://github.com/brandonore/Content-Scraper"><i class="fab fa-github-alt"></i></a>
-                                    </div>
-                                    <div class="card-body">
-                                        <div class="card-title">Content Scraper</div>
-                                        <ul class="card-text">
-                                            <li>Uses the Request package to scrape a predefined site for t-shirt prices and info</li>
-                                            <li>Scraped data includes - Item title, price, image url, url & time of scrape</li>
-                                            <li>Data gets exported to an Excel sheet using the json2csv package</li>
-                                            <li>json2csv will automatically create a data directory</li>
-                                            <li>Success message when the scrape is successful</li>
-                                        </ul>
-                                        <p class="card-text">Built with Node.js, Request & json2csv.
-                                        </p>
-                                    </div>
-                                </div>
-                          <img class="card-img-top card-cover" src="/src/img/previews/webscrapecsv.PNG" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Content Scraper</h5>
-                            <p class="card-text">A content scraper used to get t-shirt prices from the web.</p>
-                          </div>
-                        </div>
-                      </div>
                 </div>
-            </div>
-        </div>
+          
+            </div> <!-- end row -->
+          </div> <!-- end container -->
 
-    <div class="container-fluid" id="skills">
-        <div class="row mb-5">
-            <div class="col-lg-12 px-5">
-                <canvas id="myChart" height="600"></canvas>
-            </div>
-        </div>
+        </section>
+      </div>
     </div>
+    <!-- end page content -->
+  </div>
 
-    <!-- Core -->
-    <script src="src/vendor/jquery/jquery.min.js"></script>
-    <script src="src/vendor/jsvalidation/jquery.form.js"></script>
-    <script src="src/vendor/jsvalidation/jquery.validate.js"></script>
-    <script src="src/vendor/popper/popper.min.js"></script>
-    <script src="src/vendor/bootstrap/bootstrap.min.js"></script>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+  <!-- Core -->
+  <script src="src/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="src/assets/vendor/popper/popper.min.js"></script>
+  <script src="src/assets/vendor/bootstrap/bootstrap.min.js"></script>
 
-    <!-- Theme/Vendor JS -->
-    <script src="src/js/argon.min.js"></script>
-    <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+  <!-- Theme JS -->
+  <script src="/assets/js/argon.min.js"></script>
 
-    <!-- Main JS -->
-    <script src="src/js/main.js"></script>
-    <script src="src/vendor/mail/mail.js"></script>
+  <!-- Chart JS -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+  <script src="src/js/main.js"></script>
+
 </body>
 </html>
