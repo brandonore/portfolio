@@ -23,7 +23,12 @@
 }
 
 .sidebar-heading {
+    position: relative;
     padding-bottom: 50px;
+}
+
+.sidebar-heading, .list-group, .git-chart {
+    width: 100%;
 }
 
 .logo {
@@ -77,6 +82,12 @@
     > a i:hover {
         color: lighten($primary, 20%);
     }
+}
+
+.git-chart {
+    position: relative;
+    margin-top: 50px;
+    // padding: 0 10px;
 }
 
 @media (min-width: 768px) {

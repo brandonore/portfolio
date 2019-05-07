@@ -18,7 +18,11 @@
   min-width: 100vw; }
 
 .sidebar-heading {
+  position: relative;
   padding-bottom: 50px; }
+
+.sidebar-heading, .list-group, .git-chart {
+  width: 100%; }
 
 .logo {
   display: flex;
@@ -60,6 +64,10 @@
     transition: all .2s linear; }
   .social > a i:hover {
     color: #b5bff3; }
+
+.git-chart {
+  position: relative;
+  margin-top: 50px; }
 
 @media (min-width: 768px) {
   #sidebar-wrapper {
