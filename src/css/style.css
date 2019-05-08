@@ -2,7 +2,15 @@
   min-height: 100vh;
   margin-left: -15rem;
   transition: all .15s ease-out;
-  background: #fff; }
+  background: #fff;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0; }
+
+#page-content-wrapper {
+  transition: all .15s ease-out;
+  margin-left: 0; }
 
 #sidebar-wrapper .sidebar-heading {
   padding: 0.875rem 1.25rem;
@@ -13,6 +21,9 @@
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0; }
+
+#wrapper.toggled #page-content-wrapper {
+  margin-left: 15rem; }
 
 #page-content-wrapper {
   min-width: 100vw; }
@@ -76,7 +87,37 @@
     min-width: 0;
     width: 100%; }
   #wrapper.toggled #sidebar-wrapper {
-    margin-left: -15rem; } }
+    margin-left: -15rem; }
+  #wrapper.toggled #page-content-wrapper {
+    margin-left: 0; } }
+
+@media (min-width: 769px) {
+  #page-content-wrapper {
+    margin-left: 15rem; } }
+
+#skills-chart {
+  width: 100%; }
+
+.skills-title {
+  text-align: center;
+  border-bottom: 2px solid #E9ECEF; }
+
+.home-chart {
+  margin-top: 1.2rem; }
+
+.profile-img-home {
+  max-width: 150px;
+  border-radius: 50%;
+  border: 2px solid #5e72e4; }
+
+.home-card {
+  text-align: center; }
+
+.card-text {
+  text-align: left; }
+
+.ct2 {
+  text-align: center; }
 
 body {
   overflow-x: hidden;
@@ -92,3 +133,6 @@ a:hover {
 .main-container {
   background: #e9ecef;
   height: 100vh; }
+
+.card {
+  min-height: 100%; }
