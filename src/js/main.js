@@ -1,7 +1,5 @@
-$("#menu-toggle").click(function(e) {
-    e.preventDefault();
-    $("#wrapper").toggleClass("toggled");
-    // $('#page-content-wrapper').toggleClass('toggled');
+const scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 800
 });
 
 const ctx = document.getElementById('menu-chart').getContext("2d");
@@ -22,6 +20,12 @@ gs1.addColorStop(1, '#b721ff');
 const gf1 = ctx.createLinearGradient(0, 500, 200, 0);
 gf1.addColorStop(0, "rgba(33, 212, 253, 0.6)");
 gf1.addColorStop(1, "rgba(183, 33, 255, 0.6)");
+
+$("#menu-toggle").click(function(e) {
+    e.preventDefault();
+    $("#wrapper").toggleClass("toggled");
+    // $('#page-content-wrapper').toggleClass('toggled');
+});
 
 let myChart = new Chart(ctx, {
     type: 'line',

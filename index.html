@@ -36,9 +36,8 @@
         </div>
       </div>
       <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item">Home</a>
-        <a href="#" class="list-group-item">Portfolio</a>
-        <a href="#" class="list-group-item">Skills</a>
+        <a data-scroll href="#home" class="list-group-item">Home</a>
+        <a data-scroll href="#portfolio" class="list-group-item">Portfolio</a>
         <a href="#" class="list-group-item">Contact</a>
       </div>
       <div class="git-chart">
@@ -50,32 +49,29 @@
     <!-- page Content -->
     <div id="page-content-wrapper">
 
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light" id="home">
         <button class="btn btn-primary" id="menu-toggle"><i class="far fa-bars"></i></button>
       </nav>
 
       <div class="container-fluid main-container">
         <section class="pt-4">
-
-          <div class="container-fluid home-container">
+          <div class="container-fluid home-container"> <!-- start home container -->
             <div class="row">
-
               <div class="col-lg-6">
                 <div class="card home-card">
                   <div class="card-body">
                     <img class="profile-img-home" src="src/img/profile-pic.png" />
-                    <h5 class="card-title">Brandon Ore <span class="font-weight-light">, 30</span></h5>
+                    <h4 class="card-title">Brandon Ore <span class="font-weight-light">, 30</span></h4>
                     <h6>Denver, CO</h6>
                     <p class="card-text">Hello! My name is Brandon Ore & I'm a web developer concentrating on front-end development with
                       a little back-end as well. I'm focused on building clean, user-friendly experiences. Currently available 
                       for hire! Interested in working with me? Send me a message!
                     </p>
                     <p class="card-text ct2">Scroll down to see my work!</p>
-                    <a href="#" class="btn btn-primary home-btn">Go somewhere</a>
+                    <a href="#" class="btn btn-primary home-btn">Contact</a>
                   </div>
                 </div>
               </div>
-
               <div class="col-lg-6">
                   <div class="card">
                     <div class="card-body skills">
@@ -88,20 +84,106 @@
                     </div>
                   </div>
                 </div>
-          
             </div> <!-- end row -->
-          </div> <!-- end container -->
-
+          </div> <!-- end home container -->
+        </section>
+        <section class="pt-4">
+          <div class="container-fluid port-container" id="portfolio"> <!-- start port container -->
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="card">
+                  <div class="card-body port">
+                    <div class="port-title">
+                      <h5 class="card-title">Projects</h5>
+                    </div>
+                    <div class="port-items row"> <!-- port row 1-->
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="port-items row"> <!-- port row 2-->
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="port-items row"> <!-- port row 3-->
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="port-items row"> <!-- port row 4-->
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-6">
+                        <div class="card">
+                          <div class="card-body">
+                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
+                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> <!-- end port container -->
         </section>
       </div>
     </div>
     <!-- end page content -->
   </div>
 
-  <!-- Core -->
+  <!-- Core/Plugins -->
   <script src="src/assets/vendor/jquery/jquery.min.js"></script>
   <script src="src/assets/vendor/popper/popper.min.js"></script>
   <script src="src/assets/vendor/bootstrap/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.0.3/dist/smooth-scroll.min.js"></script>
 
   <!-- Theme JS -->
   <script src="/assets/js/argon.min.js"></script>

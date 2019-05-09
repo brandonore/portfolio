@@ -17,6 +17,10 @@ h5, h6 {
     color: $titlegray;
 }
 
+h5 {
+    margin-top: 0 !important;
+}
+
 a {
     transition: .2s all linear;
 }
@@ -26,6 +30,10 @@ a:hover {
     color: lighten($primary, 20%);
 }
 
+button {
+    transition: all .2s linear;
+}
+
 .main-container {
     background: #F7F7F7;
     height: 100vh;
@@ -33,4 +41,20 @@ a:hover {
 
 .card {
     min-height: 100%;
+}
+
+.card-title {
+    color: $titlegray;
+    margin: 1rem 0;
+}
+
+.skills-title,
+.port-title {
+    text-align: center;
+    border-bottom: 2px solid $bggray;
+}
+
+.home-chart,
+.port-items {
+    margin-top: 1.2rem;
 }

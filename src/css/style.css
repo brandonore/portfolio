@@ -102,13 +102,6 @@
 #skills-chart {
   width: 100%; }
 
-.skills-title {
-  text-align: center;
-  border-bottom: 2px solid #F7F7F7; }
-
-.home-chart {
-  margin-top: 1.2rem; }
-
 .profile-img-home {
   max-width: 150px;
   border-radius: 50%;
@@ -126,10 +119,6 @@
 .ct2 {
   text-align: center; }
 
-.card-title {
-  color: #798b9f;
-  margin: 1rem 0; }
-
 body {
   overflow-x: hidden;
   font-weight: 300;
@@ -142,6 +131,9 @@ span {
 h5, h6 {
   color: #798b9f; }
 
+h5 {
+  margin-top: 0 !important; }
+
 a {
   transition: .2s all linear; }
 
@@ -149,9 +141,25 @@ a:hover {
   cursor: pointer;
   color: #b5bff3; }
 
+button {
+  transition: all .2s linear; }
+
 .main-container {
   background: #F7F7F7;
   height: 100vh; }
 
 .card {
   min-height: 100%; }
+
+.card-title {
+  color: #798b9f;
+  margin: 1rem 0; }
+
+.skills-title,
+.port-title {
+  text-align: center;
+  border-bottom: 2px solid #F7F7F7; }
+
+.home-chart,
+.port-items {
+  margin-top: 1.2rem; }
