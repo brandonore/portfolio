@@ -5,6 +5,16 @@
 body {
     overflow-x: hidden;
     font-weight: 300;
+    color: $textgray;
+}
+
+span {
+    color: $titlegray;
+    font-weight: bold;
+}
+
+h5, h6 {
+    color: $titlegray;
 }
 
 a {
@@ -17,7 +27,7 @@ a:hover {
 }
 
 .main-container {
-    background: #e9ecef;
+    background: #F7F7F7;
     height: 100vh;
 }
 

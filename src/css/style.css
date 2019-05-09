@@ -6,7 +6,8 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0; }
+  left: 0;
+  border-right: 1px solid #eaeaea; }
 
 #page-content-wrapper {
   transition: all .15s ease-out;
@@ -95,12 +96,15 @@
   #page-content-wrapper {
     margin-left: 15rem; } }
 
+.navbar {
+  border-bottom: 1px solid #eaeaea; }
+
 #skills-chart {
   width: 100%; }
 
 .skills-title {
   text-align: center;
-  border-bottom: 2px solid #E9ECEF; }
+  border-bottom: 2px solid #F7F7F7; }
 
 .home-chart {
   margin-top: 1.2rem; }
@@ -113,15 +117,30 @@
 .home-card {
   text-align: center; }
 
+.card {
+  border: 1px solid #eaeaea; }
+
 .card-text {
   text-align: left; }
 
 .ct2 {
   text-align: center; }
 
+.card-title {
+  color: #798b9f;
+  margin: 1rem 0; }
+
 body {
   overflow-x: hidden;
-  font-weight: 300; }
+  font-weight: 300;
+  color: #8898aa; }
+
+span {
+  color: #798b9f;
+  font-weight: bold; }
+
+h5, h6 {
+  color: #798b9f; }
 
 a {
   transition: .2s all linear; }
@@ -131,7 +150,7 @@ a:hover {
   color: #b5bff3; }
 
 .main-container {
-  background: #e9ecef;
+  background: #F7F7F7;
   height: 100vh; }
 
 .card {

@@ -1,3 +1,6 @@
+.navbar {
+    border-bottom: 1px solid darken($bggray, 5%);
+}
 
 #skills-chart {
     width: 100%;
@@ -5,7 +8,7 @@
 
 .skills-title {
     text-align: center;
-    border-bottom: 2px solid #E9ECEF;
+    border-bottom: 2px solid $bggray;
 }
 
 .home-chart {
@@ -22,6 +25,10 @@
     text-align: center;
 }
 
+.card {
+    border: 1px solid darken($bggray, 5%);
+}
+
 .card-text {
     text-align: left;
 }
@@ -30,6 +37,7 @@
     text-align: center;
 }
 
-// .home-btn {
-//     margin-top: 20px;
-// }
+.card-title {
+    color: $titlegray;
+    margin: 1rem 0;
+}
