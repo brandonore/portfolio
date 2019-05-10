@@ -21,6 +21,41 @@
 
 <body>
   <div class="d-flex" id="wrapper">
+      <!-- start modal -->
+      <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                  <form autocomplete="off" id="form" action="src/vendor/mail/mail.php" class="contact-form row" method="POST" novalidate>
+                      <div class="col-lg-12 contact">
+                          <div id="errors"></div>
+                          <input class="form-control name-field" type="text" name="name" placeholder="Name" required>
+                          <input class="form-control" type="text" name="email" placeholder="E-mail" required>
+                          <input class="form-control" type="text" name="subject" placeholder="Subject" required>
+                          <input name="userfile[]" type="file" id="file" class="inputfile" data-multiple-caption="{count} files selected" multiple />
+                          <label id="label" for="file">Attach File...</label>
+                          <textarea class="form-control" name="message" placeholder="Write your message..." cols="30" rows="10" required></textarea>
+                          <div class="g-recaptcha" data-sitekey="6Ld0nZEUAAAAACjpa2T0mDZdMjg2GmxpcPyMVZve"></div>
+                          <input type="hidden" class="hiddenRecaptcha required" name="hiddenRecaptcha" id="hiddenRecaptcha">
+                          <div id="boxalign"><div class="xyz abc col s6"></div></div>	
+                      </div>
+                      <div class="modal-footer">
+                          <button type="submit" class="btn btn-danger btn-submit">Send</button>
+                      </div>
+                  </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end modal -->
 
     <!-- sidebar -->
     <div id="sidebar-wrapper">
@@ -38,10 +73,13 @@
       <div class="list-group list-group-flush">
         <a data-scroll href="#home" class="list-group-item">Home</a>
         <a data-scroll href="#portfolio" class="list-group-item">Portfolio</a>
-        <a href="#" class="list-group-item">Contact</a>
+        <a href="#" data-toggle="modal" data-target="#contactModal" class="list-group-item">Contact</a>
       </div>
       <div class="git-chart">
         <canvas id="menu-chart" width="200" height="200"></canvas>
+      </div>
+      <div class="sidebar-footer">
+        <p>Copyright <i class="far fa-copyright"></i> 2019 Brandon Ore </p>
       </div>
     </div>
     <!-- end sidebar -->
@@ -57,7 +95,7 @@
         <section class="pt-4">
           <div class="container-fluid home-container"> <!-- start home container -->
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-xl-6 col-lg-12">
                 <div class="card home-card">
                   <div class="card-body">
                     <img class="profile-img-home" src="src/img/profile-pic.png" />
@@ -68,11 +106,11 @@
                       for hire! Interested in working with me? Send me a message!
                     </p>
                     <p class="card-text ct2">Scroll down to see my work!</p>
-                    <a href="#" class="btn btn-primary home-btn">Contact</a>
+                    <button type="button" class="btn btn-md btn-primary mr-4" data-toggle="modal" data-target="#contactModal">Contact Me</button>
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-xl-6 col-lg-12">
                   <div class="card">
                     <div class="card-body skills">
                       <div class="skills-title">
@@ -90,81 +128,79 @@
         <section class="pt-4">
           <div class="container-fluid port-container" id="portfolio"> <!-- start port container -->
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-xl-12">
                 <div class="card">
                   <div class="card-body port">
                     <div class="port-title">
                       <h5 class="card-title">Projects</h5>
                     </div>
-                    <div class="port-items row"> <!-- port row 1-->
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                    <!-- start portfolio items -->
+                    <div class="grid">
+                      <div class="row"> <!-- row 1 -->
+                        <div class="col-xl-4 col-lg-6"> <!-- item 1 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/sam-prev.PNG" alt="samuraii" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aliquid quos impedit debitis, esse nesciunt distinctio saepe.</p>
+                                <a href="#"><i class="fa fa-search"></i></a>
+                              </figcaption>
+                          </figure>
                         </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                        <div class="col-xl-4 col-lg-6"> <!-- item 2 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/aurora1.PNG" alt="aurora" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                                </p>
+                              </figcaption>
+                          </figure>
                         </div>
-                      </div>
-                    </div>
-                    <div class="port-items row"> <!-- port row 2-->
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                        <div class="col-xl-4 col-lg-6"> <!-- item 3 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/chii.png" alt="chii" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                                </p>
+                              </figcaption>
+                          </figure>
                         </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                        <div class="col-xl-4 col-lg-6"> <!-- item 4 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/expensify.PNG" alt="expensify" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                                </p>
+                              </figcaption>
+                          </figure>
                         </div>
-                      </div>
-                    </div>
-                    <div class="port-items row"> <!-- port row 3-->
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                        <div class="col-xl-4 col-lg-6"> <!-- item 5 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/twitter2.png" alt="twitter" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                                </p>
+                              </figcaption>
+                          </figure>
                         </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="port-items row"> <!-- port row 4-->
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-6">
-                        <div class="card">
-                          <div class="card-body">
-                              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos facere, optio odio tenetur illum magnam. 
-                              Culpa cum repudiandae recusandae quibusdam dolorem voluptates. Labore quas omnis soluta consequuntur quaerat atque qui.
-                          </div>
+                        <div class="col-xl-4 col-lg-6"> <!-- item 6 -->
+                          <figure class="effect-oscar">
+                              <img src="src/img/previews/webscrapecsv.PNG" alt="scraper" />
+                              <figcaption>
+                                <h2><span>Title</span></h2>
+                                <p>
+                                  <a href="#"><i class="fa fa-search"></i></a>
+                                </p>
+                              </figcaption>
+                          </figure>
                         </div>
                       </div>
                     </div>
@@ -184,6 +220,7 @@
   <script src="src/assets/vendor/popper/popper.min.js"></script>
   <script src="src/assets/vendor/bootstrap/bootstrap.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.0.3/dist/smooth-scroll.min.js"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   <!-- Theme JS -->
   <script src="/assets/js/argon.min.js"></script>

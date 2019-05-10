@@ -1,6 +1,9 @@
 @import '_variables';
-@import '_sidebar.scss';
-@import '_home.scss';
+@import '_modal';
+@import '_sidebar';
+@import '_home';
+@import '_portfolioitems.scss';
+@import '_custombreakpoints.scss';
 
 body {
     overflow-x: hidden;
@@ -57,4 +60,8 @@ button {
 .home-chart,
 .port-items {
     margin-top: 1.2rem;
+}
+
+form {
+    margin: 0;
 }

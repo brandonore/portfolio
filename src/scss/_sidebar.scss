@@ -104,6 +104,19 @@
     // padding: 0 10px;
 }
 
+.sidebar-footer {
+    border-top: 2px solid #E9ECEF;
+    padding-top: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    > p {
+        text-align: center;
+        font-size: .8rem;
+    }
+}
+
 @media (min-width: 768px) {
     #sidebar-wrapper {
         margin-left: 0;
