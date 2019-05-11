@@ -1,5 +1,5 @@
 const scroll = new SmoothScroll('a[href*="#"]', {
-	speed: 800
+	speed: 300
 });
 
 const ctx = document.getElementById('menu-chart').getContext("2d");

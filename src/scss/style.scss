@@ -3,7 +3,6 @@
 @import '_sidebar';
 @import '_home';
 @import '_portfolioitems.scss';
-@import '_custombreakpoints.scss';
 
 body {
     overflow-x: hidden;
@@ -24,7 +23,7 @@ h5 {
     margin-top: 0 !important;
 }
 
-a {
+a, i {
     transition: .2s all linear;
 }
 
