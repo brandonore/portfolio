@@ -135,6 +135,7 @@
 
 .grid figure {
   position: relative;
+  margin-bottom: 0;
   float: left;
   overflow: hidden;
   background: rgba(33, 37, 41, 0.8);
@@ -260,11 +261,8 @@ figure.effect-bubba a i {
   -webkit-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0); }
 
-.icon-links a i {
-  transition: all .2s linear; }
-
 .icon-links a i:hover {
-  color: #b3b3b3; }
+  color: #d9d9d9; }
 
 figure.effect-bubba:hover figcaption::before,
 figure.effect-bubba:hover figcaption::after {
@@ -276,6 +274,7 @@ figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p,
 figure.effect-bubba:hover a i {
   opacity: 1;
+  transition: all .2s linear;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
 
@@ -305,8 +304,7 @@ button {
   transition: all .2s linear; }
 
 .main-container {
-  background: #F7F7F7;
-  height: 100vh; }
+  background: #F7F7F7; }
 
 .card {
   min-height: 100%; }

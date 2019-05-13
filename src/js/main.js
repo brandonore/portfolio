@@ -1,7 +1,9 @@
+// smooth scroll
 const scroll = new SmoothScroll('a[href*="#"]', {
 	speed: 300
 });
 
+// chart js colors
 const ctx = document.getElementById('menu-chart').getContext("2d");
 const ctx1 = document.getElementById('skills-chart').getContext("2d");
 
@@ -24,9 +26,9 @@ gf1.addColorStop(1, "rgba(183, 33, 255, 0.6)");
 $("#menu-toggle").click(function(e) {
     e.preventDefault();
     $("#wrapper").toggleClass("toggled");
-    // $('#page-content-wrapper').toggleClass('toggled');
 });
 
+// new charts 
 let myChart = new Chart(ctx, {
     type: 'line',
     data: {
@@ -104,5 +106,90 @@ let myChart1 = new Chart(ctx1, {
                 }
             }]
         }
+    }
+});
+
+// modal list info
+const pi1 = '<ul>' +
+    '<li>Secure login/logout using OAuth2</li>' +
+    '<li>Connect to your imgur account using the imgur API</li>' +
+    '<li>Drag and drop images to upload + file select</li>' +
+    '<li>View all uploaded images through the gallery component</li>' +
+    '<li>State management with Vuex</li>' +
+'</ul>'
+
+const pi2 = '<ul>' +
+    '<li>Genearte PDF invoices</li>' +
+    '<li>Preview the invoice in a separate window before saving</li>' +
+    '<li>Upload images (eg. company logo)</li>' +
+    '<li>Complete with date picker to select due dates</li>' +
+    '<li>Easily add/remove discounts</li>' +
+    '<li>Extra fields for Notes & Terms/Conditions</li>' +
+    '<li>All fields are editable to allow for full customization</li>' +
+'</ul>'
+
+const pi3 = '<ul>' +
+    '<li>Auto-syncs every 90 seconds</li>' +
+    '<li>Pulls data from CoinMarketCap</li>' +
+    '<li>Search to find your favorite coins</li>' +
+    '<li>Settings include Satoshi -> USD & USD -> BTC converter that updates in real time</li>' +
+    '<li>Toggle display between USD/BTC price & volume + market cap/available + total supply</li>' +
+    '<li>Dark & light theme</li>' +
+    '<li>Support for Windows & macOS</li>' +
+'</ul>'
+
+const pi4 = '<ul>' +
+    '<li>Login with Google authentication</li>' +
+    '<li>Expenses are saved via Google Firebase</li>' +
+    '<li>Add/edit/remove expenses</li>' +
+    '<li>Date pickers for easy filtering</li>' +
+    '<li>Sort by date or amount</li>' +
+    '<li>Search field for searching and filtering expenses</li>' +
+'</ul>'
+
+const pi5 = '<ul>' +
+    '<li>Current command categories: admin, fun, general & anime</li>' +
+    '<li>Admin - !addrole, !ban, !kick, !purge, !removerole, !tempmute, !warn</li>' +
+    '<li>Fun - !8ball, !cat, !dog, !ping</li>' +
+    '<li>General - !botinfo, !report, !say, !serverinfo, !warnlevel</li>' +
+    '<li>Anime - !getanime</li>' +
+    '<li>Detailed readme site coming soon with a full list of commands, detailed descriptions & usage info!</li>' +
+'</ul>'
+
+const pi6 = '<ul>' +
+    '<li>Simple, clean, easy to read interface</li>' +
+    '<li>Displays recent tweets from your timeline, recent accounts followed & direct messages</li>' +
+    '<li>Post a tweet from the custom text box</li>' +
+    '<li>Uses the twitter api and key to connect to your account.</li>' +
+'</ul>'
+
+// populate modal list 
+$('.fa-info-circle').on('click', function() {
+    let idName = $(this).attr('id');
+    switch (idName) {
+        case 'item1' :
+            $('#info-modal-body').html(pi1);
+            $('#modal-title').html('Imgur Upload App');
+            break;
+        case 'item2' :
+            $('#info-modal-body').html(pi2);
+            $('#modal-title').html('Samuraii Invoice Generator');
+            break;
+        case 'item3' :
+            $('#info-modal-body').html(pi3);
+            $('#modal-title').html('Aurora Cryptocurrency Tracker');
+            break;
+        case 'item4' :
+            $('#info-modal-body').html(pi4);
+            $('#modal-title').html('Expensify (Expense Manager) App');
+            break;
+        case 'item5' :
+            $('#info-modal-body').html(pi5);
+            $('#modal-title').html('Chii Discord Bot');
+            break;
+        case 'item6' :
+            $('#info-modal-body').html(pi6);
+            $('#modal-title').html('Twitter Interface');
+            break;
     }
 });

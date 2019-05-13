@@ -6,6 +6,7 @@
 
 .grid figure {
     position: relative;
+    margin-bottom: 0;
     float: left;
     overflow: hidden;
     background: rgba(33,37,41, 0.8);
@@ -155,12 +156,8 @@ figure.effect-bubba a i {
         transform: translate3d(0,20px,0);
 }
 
-.icon-links a i {
-    transition: all .2s linear;
-}
-
 .icon-links a i:hover {
-    color: darken(#fff, 30%);
+    color: darken(#fff, 15%);
 }
 
 figure.effect-bubba:hover figcaption::before,
@@ -173,7 +170,8 @@ figure.effect-bubba:hover figcaption::after {
 figure.effect-bubba:hover h2,
 figure.effect-bubba:hover p,
 figure.effect-bubba:hover a i {
-	opacity: 1;
+    opacity: 1;
+    transition: all .2s linear;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }

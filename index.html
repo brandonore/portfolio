@@ -21,12 +21,12 @@
 
 <body>
   <div class="d-flex" id="wrapper">
-      <!-- start modal -->
+      <!-- start contact modal -->
       <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Send me a message!</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -55,7 +55,29 @@
           </div>
         </div>
       </div>
-      <!-- end modal -->
+      <!-- end contact modal -->
+
+      <!-- start info modal -->
+      <div class="modal fade" id="infoModal" tabindex="-1" role="dialog" aria-labelledby="modal-default" aria-hidden="true">
+        <div class="modal-dialog modal- modal-dialog-centered modal-" role="document">
+          <div class="modal-content">
+            <div class="modal-header info-header">
+              <h6 class="modal-title" id="modal-title"></h6>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">×</span>
+                </button>
+            </div>
+          <div id="info-modal-body" class="modal-body">
+            
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Screens</button>
+            <button type="button" class="btn btn-link  ml-auto" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end info modal -->
 
     <!-- sidebar -->
     <div id="sidebar-wrapper">
@@ -73,6 +95,7 @@
       <div class="list-group list-group-flush">
         <a data-scroll href="#home" class="list-group-item">Home</a>
         <a data-scroll href="#portfolio" class="list-group-item">Portfolio</a>
+        <a data-scroll href="#resume" class="list-group-item">Resume</a>
         <a href="#" data-toggle="modal" data-target="#contactModal" class="list-group-item">Contact</a>
       </div>
       <div class="git-chart">
@@ -137,7 +160,7 @@
                     <!-- start portfolio items -->
                     <div class="grid">
                       <div class="row"> <!-- row 1 -->
-                        <div class="col-xl-6 col-lg-12"> <!-- item 1 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 1 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg5.png" alt="bg5" />
                               <figcaption>
@@ -145,27 +168,27 @@
                                   <p>Dynamic vue app allowing drag & drop image uploads to imgur! <br> Built with vue, vue router, vuex, oauth2 and more.</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/imgur-vue"><i class="fab fa-github-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item1" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
                         </div>
-                        <div class="col-xl-6 col-lg-12"> <!-- item 2 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 2 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg1.png" alt="bg1" />
                               <figcaption>
                                   <h2>Samu<span>raii</span></h2>
-                                  <p>Simple invoice generator for Windows! <br> Built with Javascript, HTML5, CSS3 & wrapped in the Electron framework. Please see the github page for downloads! *Currently only available for Windows.</p>
+                                  <p>Simple invoice generator for Windows! <br> Built with Javascript, HTML5, CSS3 & wrapped in the Electron framework. Please see the github page for downloads!</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/samuraii"><i class="fab fa-github-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item2" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
                         </div>
-                        <div class="col-xl-6 col-lg-12"> <!-- item 3 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 3 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg2.png" alt="bg2" />
                               <figcaption>
@@ -174,44 +197,43 @@
                                     Please see the github page for downloads.</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/aurora"><i class="fab fa-github-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item3" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
                         </div>
-                        <div class="col-xl-6 col-lg-12"> <!-- item 4 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 4 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg6.png" alt="bg6" />
                               <figcaption>
                                   <h2>Expen<span>sify</span></h2>
-                                  <p>Simple expense manager built with React! <br> Built with React, Redux, Firebase, Javascript, HTML5 & CSS3. Click the 'link' icon
-                                    above for a live preview.</p>
+                                  <p>Simple expense manager built with React! <br> Built with React, Redux, Firebase, Javascript, HTML5 & CSS3. Click the 'link' icon for a live preview.</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-link"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/expensify-app"><i class="fab fa-github-alt"></i></a>
+                                    <a href="http://expensify.brandonore.io"><i class="far fa-link"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item4" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
                         </div>
-                        <div class="col-xl-6 col-lg-12"> <!-- item 5 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 5 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg3.png" alt="bg3" />
                               <figcaption>
                                   <h2>Ch<span>ii</span></h2>
                                   <p>A multi-purpose Discord bot featuring moderation, animu, gaming, gambling, fun and more! <br> Built with Javascript & the discord.js module. 
-                                    Project is currently on <span class="badge badge-default">HOLD</span> due to time constraints, but will be updated/re-written in the future.</p>
+                                    Project is currently on <span class="badge badge-default">HOLD</span> due to time constraints.</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/chii"><i class="fab fa-github-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item5" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
                         </div>
-                        <div class="col-xl-6 col-lg-12"> <!-- item 6 -->
+                        <div class="col-xl-4 col-lg-12 col"> <!-- item 6 -->
                           <figure class="effect-bubba">
                               <img src="src/img/bg4.png" alt="bg4" />
                               <figcaption>
@@ -220,8 +242,8 @@
                                     *Requires a separate config.js file in the path of '/public/js/config.js'.</p>
                                   <p class="icon-links">
                                     <a id="i1" class="img-gallery" href="javascript:;"><i class="far fa-images"></i></a>
-                                    <a href="https://github.com/brandonore/samuraii/releases"><i class="fab fa-github-alt"></i></a>
-                                    <a href="#"><i class="far fa-info-circle"></i></a>
+                                    <a href="https://github.com/brandonore/Twitter-Interface"><i class="fab fa-github-alt"></i></a>
+                                    <a href="#" data-toggle="modal" data-target="#infoModal"><i id="item6" class="far fa-info-circle"></i></a>
                                   </p>
                               </figcaption>
                           </figure>
