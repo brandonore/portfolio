@@ -1,0 +1,101 @@
+.contact  {
+    > input {
+        margin: 10px 0;
+    }
+    > textarea {
+        resize: none;
+    }
+}
+
+#form {
+    width: 100%;
+}
+
+#errors {
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin: 0;
+    animation: summary 0.5s linear;
+    text-align:left;
+    list-style-type: none;
+    display:none;
+    transition: all .2s linear;
+  }
+
+#errors ul { margin: 0; }
+
+#errors li {
+  font-size: 0.95em;
+  padding: 0.2em 0;
+  margin: 0;
+}
+
+#errors li a { color: #333; }
+
+#errors p { 
+  margin-top: 0;
+  font-weight: bold;
+}
+
+#errors:focus {
+  outline: none !important;
+}
+
+// success box
+#boxalign {
+    display: flex;
+    justify-content: center;
+}
+
+.abc {
+    background: $secondary;
+    border-left: 4px solid $success;
+    color: $success;
+    margin-top:20px;
+    height:50px;
+    max-width:300px;
+    display:none;
+    padding:13px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border-radius: 2px; 
+    text-align:center !important;
+    font-family:sans-serif;
+}
+
+.g-recaptcha {
+    text-align: -webkit-center;
+    text-align: -moz-center;
+    text-align: -ms-center;
+    text-align: -o-center;
+    margin: 15px auto;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1rem;
+}
+
+#label {
+    background-color: $primary;
+    color: $secondary;
+    border-radius: 4px;
+}

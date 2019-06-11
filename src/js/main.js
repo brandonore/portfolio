@@ -352,3 +352,10 @@ $('.img-gallery').click(function() {
                 break;
     }
   });
+
+  // reset form
+  $('.close').on('click', function() {
+    $('#form')[0].reset();
+    $('#label').html('Attach File...');
+    $('#file').val('');
+})
