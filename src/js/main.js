@@ -47,7 +47,7 @@ let myChart = new Chart(ctx, {
             fill: true,
             backgroundColor: gf,
             borderWidth: 4,
-            data: [0, 15, 5, 0, 10, 1, 0]
+            data: [0, 15, 5, 0, 10, 3, 0]
         }]
     },
     options: {
