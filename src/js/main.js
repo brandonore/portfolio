@@ -34,7 +34,7 @@ let myChart = new Chart(ctx, {
     data: {
         labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
         datasets: [{
-            label: "Commits by Month",
+            label: "Github Commits by Month",
             borderColor: gs,
             pointBorderColor: gs,
             pointBackgroundColor: gs,
@@ -47,7 +47,7 @@ let myChart = new Chart(ctx, {
             fill: true,
             backgroundColor: gf,
             borderWidth: 4,
-            data: [2, 5, 12, 9, 9, 5, 12]
+            data: [0, 15, 5, 0, 10, 1, 0]
         }]
     },
     options: {

@@ -4,9 +4,6 @@
 .contact > textarea {
   resize: none; }
 
-#form {
-  width: 100%; }
-
 #errors {
   background-color: transparent;
   border-radius: 2px;

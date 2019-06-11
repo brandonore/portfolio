@@ -50,7 +50,7 @@ $('#form').validate({
                 wrapper:'li',
         submitHandler: function(form){
             $(form).ajaxSubmit({
-                url: 'http://brandonore.io/src/vendor/mail/mailplusattachment.php',
+                url: 'http://brandonore.io/src/js/mail/mailplusattachment.php',
                 type: 'post',
                 data: $('form').serialize(),
                 beforeSubmit: function (data) {
