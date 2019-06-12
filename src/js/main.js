@@ -32,7 +32,7 @@ $("#menu-toggle").click(function(e) {
 let myChart = new Chart(ctx, {
     type: 'line',
     data: {
-        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL"],
+        labels: ["JAN", "FEB", "MAR", "APR", "MAY", "JUN"],
         datasets: [{
             label: "Github Commits by Month",
             borderColor: gs,
@@ -47,7 +47,7 @@ let myChart = new Chart(ctx, {
             fill: true,
             backgroundColor: gf,
             borderWidth: 4,
-            data: [0, 15, 5, 0, 10, 3, 0]
+            data: [0, 15, 5, 0, 10, 3]
         }]
     },
     options: {

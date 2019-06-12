@@ -179,3 +179,20 @@ figure.effect-bubba:hover a i {
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 }
+
+
+@media (max-width: 575.98px) {
+
+      figure.effect-bubba h2 {
+          padding-top: 5%;
+          font-size: 1.5rem;
+      }
+
+      figure.effect-bubba p {
+          font-size: .7rem;
+      }
+
+      figure.effect-bubba a i {
+        //   font-size: 1.5rem;
+      }
+}
