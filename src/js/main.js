@@ -199,6 +199,35 @@ $('.img-gallery').click(function() {
     let id = $(this).attr('id');
 
     switch (id) {
+
+        case 'i1':
+            $.fancybox.open([
+                {
+                    src  : 'https://i.imgur.com/dN1dvYA.png',
+                    opts : {
+                        caption : 'Gallery View'
+                    }
+                },
+                {
+                    src  : 'https://i.imgur.com/CMI14DC.png',
+                    opts : {
+                        caption : 'Upload Component'
+                    }
+                },
+                {
+                    src : 'https://i.imgur.com/2x4wgFE.png',
+                    opts : {
+                        caption : 'Home View'
+                    }
+                }
+            ], {
+                loop : true,
+                thumbs : {
+                    autoStart : true
+                }
+            });
+            break;
+
         case 'i2':
             $.fancybox.open([
                 {
